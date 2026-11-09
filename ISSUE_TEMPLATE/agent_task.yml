@@ -1,0 +1,28 @@
+name: Agent task
+description: A governed Chief or Worker task
+title: '[Task] '
+labels: ['chief']
+body:
+  - type: markdown
+    attributes:
+      value: 'Every task has exactly one primary route: chief XOR worker.'
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: Clear outcome and repository/component.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+    validations:
+      required: true
+  - type: dropdown
+    id: route
+    attributes:
+      label: Route
+      options: [chief, worker]
+    validations:
+      required: true
