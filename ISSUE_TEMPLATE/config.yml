@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security reporting
+    url: https://github.com/mission-control-panel/.github/security/policy
+    about: Report security issues privately when available.
